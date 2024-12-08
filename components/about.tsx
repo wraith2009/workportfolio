@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 import { HeroParallax } from "./ui/hero-parallax";
 const highlights = [
   {

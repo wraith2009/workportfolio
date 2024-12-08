@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { AlignJustify, Instagram, Twitter } from "lucide-react";
+import { Instagram, Twitter } from "lucide-react";
 import WrestlerPortfolioSection from "@/components/about";
 import { TimelineDemo } from "@/components/timelineDemo";
 import ContactForm from "@/components/contact-form";
