@@ -45,7 +45,7 @@ const highlights = [
 const WrestlerPortfolioSection: React.FC = () => {
 
   return (
-    <div className="text-black bg-black">
+    <div className="text-black bg-black py-20">
       <HeroParallax highlights={highlights} />;
     </div>
   );

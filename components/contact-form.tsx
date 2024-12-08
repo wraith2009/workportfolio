@@ -61,7 +61,7 @@ const ConnectPage = () => {
         {/* Animated Heading */}
         <motion.h1
           variants={itemVariants}
-          className="text-6xl md:text-8xl font-bold text-white mb-12 text-center tracking-tight drop-shadow-lg"
+          className="text-6xl md:text-8xl font-bold text-orange-500 mb-12 text-center tracking-tight drop-shadow-xl"
         >
           Let&apos;s Connect
         </motion.h1>
@@ -81,8 +81,8 @@ const ConnectPage = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-5 py-4 bg-white/10 text-white 
-                         text-lg rounded-xl backdrop-blur-sm 
+              className="w-full px-5 py-4  bg-transparent 
+                         text-lg rounded-xl 
                          border border-white/20
                          focus:outline-none 
                          focus:ring-2 focus:ring-white/50 
@@ -102,7 +102,7 @@ const ConnectPage = () => {
               required
               rows={5}
               className="w-full px-5 py-4 bg-white/10 text-white 
-                         text-lg rounded-xl backdrop-blur-sm 
+                         text-lg rounded-xl
                          border border-white/20
                          focus:outline-none 
                          focus:ring-2 focus:ring-white/50 

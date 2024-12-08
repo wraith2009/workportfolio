@@ -54,7 +54,7 @@ const WrestlingPortfolio = () => {
           className="relative z-10 text-center px-4"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-orange-500">
-            Tarun
+            Tarun Yadav
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             Champion Wrestler | Multiple Title Holder | Inspirational Athlete
