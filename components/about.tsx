@@ -43,7 +43,6 @@ const highlights = [
 ];
 
 const WrestlerPortfolioSection: React.FC = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className="text-black bg-black">

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { AlignJustify, Instagram, Twitter } from "lucide-react";
 import WrestlerPortfolioSection from "@/components/about";
