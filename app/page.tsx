@@ -1,12 +1,17 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { AlignJustify, Instagram, Twitter } from "lucide-react";
 import WrestlerPortfolioSection from "@/components/about";
 import { TimelineDemo } from "@/components/timelineDemo";
 import ContactForm from "@/components/contact-form";
-
+import {Condiment} from "next/font/google";
+const condiment = Condiment({
+  weight: '400',
+  subsets: ['latin'],
+})
 const WrestlingPortfolio = () => {
   return (
     <div className="min-h-screen  text-white">
@@ -18,16 +23,13 @@ const WrestlingPortfolio = () => {
       >
         <div className=" py-4 px-10">
           <div className="container mx-auto flex justify-between items-center">
-            <div className="text-2xl font-bold text-orange-500">
-              Wrestler Name
+            <div className="text-4xl font-bold text-orange-500">
+              <p className={condiment.className}>TY</p>
             </div>
 
             <div className="flex space-x-4 ">
               <Instagram className="text-white hover:text-orange-500 cursor-pointer" />
               <Twitter className="text-white hover:text-orange-500 cursor-pointer" />
-            </div>
-            <div className="md:hidden">
-              <AlignJustify className="text-white" />
             </div>
           </div>
         </div>
@@ -37,12 +39,12 @@ const WrestlingPortfolio = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="relative h-screen flex items-center justify-center"
+        className="relative h-screen flex items-end justify-center"
         style={{
           backgroundImage:
             'url("https://res.cloudinary.com/dc2ytoxzg/image/upload/v1733644499/IMG_20231229_210356_payjcl.jpg")',
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          // backgroundPosition: "center",
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>

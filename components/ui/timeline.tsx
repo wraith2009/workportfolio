@@ -34,14 +34,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
+      className="w-full bg-black  font-sans md:px-10"
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+        <h2 className="text-md font-bold md:text-5xl mb-4 text-orange-500 dark:text-white max-w-4xl">
           Journey of a Jiu Jitsu Champion
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-lg max-w-sm">
           Tracing the remarkable path of Tarun Yadav, India&apos;s Jiu Jitsu Prodigy
         </p>
       </div>
@@ -80,7 +80,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-orange-500 via-orange-100 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>
@@ -88,67 +88,3 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   );
 };
 
-// Example usage with Tarun Yadav's timeline
-export const TarunYadavTimeline = () => {
-  const timelineData: TimelineEntry[] = [
-    {
-      title: "2014",
-      content: (
-        <div className="bg-neutral-100 dark:bg-neutral-800 p-6 rounded-lg">
-          <h4 className="text-xl font-semibold mb-2">Jiu Jitsu Journey Begins</h4>
-          <p className="text-neutral-700 dark:text-neutral-300">
-            Started training in Jiu Jitsu, laying the foundation for a remarkable career in martial arts.
-          </p>
-        </div>
-      )
-    },
-    {
-      title: "2018",
-      content: (
-        <div className="bg-neutral-100 dark:bg-neutral-800 p-6 rounded-lg">
-          <h4 className="text-xl font-semibold mb-2">National Recognition</h4>
-          <p className="text-neutral-700 dark:text-neutral-300">
-            Began dominating national Jiu Jitsu competitions, winning multiple gold medals and establishing himself as a top athlete in India.
-          </p>
-        </div>
-      )
-    },
-    {
-      title: "2022",
-      content: (
-        <div className="bg-neutral-100 dark:bg-neutral-800 p-6 rounded-lg">
-          <h4 className="text-xl font-semibold mb-2">Asian Games Triumph</h4>
-          <p className="text-neutral-700 dark:text-neutral-300">
-            Represented India in Jiu Jitsu at the Asian Games, showcasing exceptional skill and dedication to the sport.
-          </p>
-        </div>
-      )
-    },
-    {
-      title: "2023",
-      content: (
-        <div className="bg-neutral-100 dark:bg-neutral-800 p-6 rounded-lg">
-          <h4 className="text-xl font-semibold mb-2">ADCC World Championship</h4>
-          <p className="text-neutral-700 dark:text-neutral-300">
-            Achieved a significant milestone by winning the ADCC Submission Fighting World Championship, solidifying his status as a global Jiu Jitsu elite.
-          </p>
-        </div>
-      )
-    },
-    {
-      title: "Achievements",
-      content: (
-        <div className="bg-neutral-100 dark:bg-neutral-800 p-6 rounded-lg">
-          <h4 className="text-xl font-semibold mb-2">Remarkable Milestones</h4>
-          <ul className="list-disc pl-5 text-neutral-700 dark:text-neutral-300">
-            <li>8-time Gold Medalist in National Jiu Jitsu Championships</li>
-            <li>Represented India in Asian Games 2022</li>
-            <li>ADCC Submission Fighting World Championship Winner</li>
-          </ul>
-        </div>
-      )
-    }
-  ];
-
-  return <Timeline data={timelineData} />;
-};
