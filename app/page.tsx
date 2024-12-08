@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { AlignJustify, Instagram, Twitter } from "lucide-react";
 import WrestlerPortfolioSection from "@/components/about";
+import { TimelineDemo } from "@/components/timelineDemo";
 
 const WrestlingPortfolio = () => {
   return (
@@ -60,6 +61,7 @@ const WrestlingPortfolio = () => {
       </motion.section>
 
       <WrestlerPortfolioSection />
+      <TimelineDemo />
     </div>
   );
 };
